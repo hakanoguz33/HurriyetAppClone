@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sifreunuttumekran"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+        android:padding="15dp"
+        android:id="@+id/uyeGirisText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Üye Girişi"
+            android:clickable="true"
+        android:textSize="25sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hesap oluştururken kullandığın e-posta adresini aşağıdaki alana girerek bilgilerini e-posta adresine
+gönderilmesini sağlayabilirsin.">
+    </TextView>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint=""
+        android:maxLines="1"
+        android:singleLine="true"
+        android:alpha="0.5"/>
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="333dp"
+        android:layout_height="55dp"
+        android:text="Şifremi Sıfırla"
+        android:fontFamily="sans-serif-condensed"
+        android:backgroundTint="@color/kirmizi"/>
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/hurriyetLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/big_15506616275c6d37fbd4770"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/hurriyetKalinYazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hürriyet.com.tr"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/hurriyetInceYazi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" üyeliğiniz ile giriş yapın"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ePostaSifreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="75dp"
+        android:singleLine="true">
+
+        <EditText
+            android:id="@+id/ePostaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:hint="E-Posta"
+            android:inputType="text"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/sifreEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.5"
+            android:hint="Şifre"
+            android:inputType="text"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_gravity="center"
+        >
+        <CheckBox
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beni Hatırla"/>
+
+        <TextView
+            android:id="@+id/sifreUnuttumText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center|right"
+            android:text="Şifremi Unuttum  >"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="Hürriyet'in "/>
+        <TextView
+            android:contextClickable="true"
+            android:id="@+id/aydinlatmaMetni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:gravity="center_horizontal"
+            android:text="Aydınlatma Metni ve  Üyelik Sözleşmesi'"
+            android:clickable="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="nde"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:text="değişiklik yapılmıştır. Bu değişiklikleri gözden geçirebilirsiniz.
+            Devam etmeniz ve login olmanız halinde Üyelik
+            Sözleşmesini'nin yeni haline kabul etmiş sayılırsınız."/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/girisYapButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GİRİŞ YAP"
+            android:textStyle="bold"
+            android:backgroundTint="@color/btnColor"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="center|left"
+        android:background="@color/black">
+
+            <TextView
+                android:id="@+id/uyeliginizYok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:paddingLeft="15sp"
+                android:text="Üyeliğiniz yok mu?"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:clickable="true"
+                android:focusable="true">
+
+            </TextView>
+            <TextView
+                android:focusable="true"
+                android:clickable="true"
+                android:id="@+id/hesapOlustur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hesap oluştur >"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingRight="15dp"
+                android:textColor="@color/white"/>
+    </LinearLayout></LinearLayout>
+
+</LinearLayout>

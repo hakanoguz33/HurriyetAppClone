@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uyelikSayfasi"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/uyeGirisUye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Üye Girişi"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="25sp"
+        android:layout_margin="15dp"
+        />
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hurriyet.com.tr"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/uyeliktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" üyeliği oluşturun"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/liner"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="İsim Soyisim*"
+                />
+            <EditText
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="E-posta*"
+                />
+            <EditText
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Şifre*"
+                />
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="* işaretli alanlar zorunludur."/>
+            <EditText
+                android:id="@+id/dogumGunuEdittext"
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Doğum Tarihi"/>
+            <EditText
+                android:layout_margin="15dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cinsiyet"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kişisel verilerinizin işlenmesine ilişkin ayrıntılı bilgi için "
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/aydinlatmaMetni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:text="Aydinlatma Metni"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="'ni inceleyebilirsiniz."/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Üyelik Sözleşmesini - Kullanım Koşullarını okudum onaylıyorum."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kampanya ve yeniliklerden haberdar olmak için Açıklanan Kurallar çerçevesinde elektronik ileti almak istiyorum."/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/buttonid"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/kirmizi"
+                android:text="ÜYE OL">
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
